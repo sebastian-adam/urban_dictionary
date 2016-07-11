@@ -23,12 +23,44 @@ ul {
   line-height: 200%;
 }
 
-#to_word_form {
+ul {
+  clear: both;
+  display: block;
+}
+
+button {
+  color: white;
+  background-color: hotpink;
+  border: none
+}
+
+button:hover {
+  color: black;
+}
+
+#word_div {
+  border: 1px solid hotpink;
+  padding: 0 50px;
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+#definition_div, #urban_div {
+  border: 1px solid black;
+  padding: 50px;
+  width: 50%;
+}
+
+#to_word_form, #to_home {
   color: black;
   font-size: 24px;
   text-decoration: none;
   border: 1px solid hotpink;
-  padding:5px;
+  padding: 5px;
+}
+
+#to_home {
+
 }
 
 #add_definition {

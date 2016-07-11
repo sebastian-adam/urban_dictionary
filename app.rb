@@ -37,6 +37,6 @@ post('/word/:id/definitions') do
   definition = params.fetch('definition')
   @definition = Definition.new({:definition => definition})
   @definition.save()
-  @definitions = Definitions.all()
+  @definitions = Definition.all()
   erb(:word)
 end

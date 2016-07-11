@@ -1,19 +1,30 @@
-<h1>Word: <em><%= @word.word() %></em></h1>
+<div id="word_div">
+  <h1>Word: <em><%= @word.word() %></em></h1>
+</div>
 
-<h1 id="definition_title">Definition:</h1>
-<ul>
-  <% @definitions.each do |defintion| %>
-    <li><em><%= definition.definition() %></em></li>
-    <p>//</p>
+<div id="definition_div">
+  <% if @definitions.length < 2 %>
+    <h1 id="definition_title">Definition:</h1>
+  <% else %>
+    <h1 id="definition_title">Definitions:</h1>
   <% end %>
-</ul>
-<form action="/word/<%= @word.id() %>/definitions/new">
-  <button id="add_definition" type="submit">Add Definition</button>
-</form>
+
+  <% if @definitions.length > 0 %>
+    <ul>
+      <% @definitions.each do |definition| %>
+        <li><em><%= definition.definition() %></em></li>
+        <p>//</p>
+      <% end %>
+    </ul>
+  <% end %>
+
+  <form action="/word/<%= @word.id() %>/definitions/new">
+    <button id="add_definition" type="submit">Add Definition</button>
+  </form>
+</div>
 
 <br>
 <br>
 <br>
 
-
-<a href='/' id="return_home">Return to Words List</a>
+<a href='/' id="to_home">return to word list</a>
