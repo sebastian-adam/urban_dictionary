@@ -42,13 +42,13 @@ button:hover {
   border: 1px solid hotpink;
   padding: 0 50px;
   margin-bottom: 20px;
-  width: 50%;
+  width: 700px;
 }
 
-#definition_div, #urban_div {
+#definition_div, #urban_div, .input_div {
   border: 1px solid black;
   padding: 50px;
-  width: 50%;
+  width: 700px;
 }
 
 #to_word_form, #to_home {
@@ -60,7 +60,7 @@ button:hover {
 }
 
 #to_home {
-
+  margin-left: 50px;
 }
 
 #add_definition {

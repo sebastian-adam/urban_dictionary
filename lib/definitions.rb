@@ -1,5 +1,5 @@
 class Definition
-  attr(:definition)
+  attr_reader(:definition)
   @@definitions = []
 
   define_method(:initialize) do |attributes|

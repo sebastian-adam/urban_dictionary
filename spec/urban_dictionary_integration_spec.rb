@@ -31,5 +31,4 @@ describe('the word definition path', {:type => :feature}) do
           expect(page).to have_content("This is a definition for first_test")
   end
 
-
 end
