@@ -1,0 +1,45 @@
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: hotpink;
+}
+
+a:visited {
+  color: hotpink;
+}
+
+a:hover {
+  color: black;
+}
+
+a:active {
+  color: gold;
+}
+
+ul {
+  list-style-type: none;
+  line-height: 200%;
+}
+
+#to_word_form {
+  color: black;
+  font-size: 24px;
+  text-decoration: none;
+  border: 1px solid hotpink;
+  padding:5px;
+}
+
+#add_definition {
+  margin: 30px 0 0 30px;
+}
+
+#definition_title {
+  float: left;
+}
+
+#return_home {
+  display: block;
+  clear: both
+}

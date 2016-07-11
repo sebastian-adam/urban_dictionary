@@ -2,8 +2,11 @@
 
 <ul>
   <% @words.each() do |word| %>
-    <li><a href='/word/<%= word.id() %>'><%= word.word() %></a></li>
+    <li><a href='/word/<%= word.id() %>'><%= word.word().upcase() %></a></li>
+    <p>//</p>
   <% end %>
 </ul>
 
-<a id='to_word_form' href='/word_form'>Add a Word</a>
+<br>
+
+<a id='to_word_form' href='/word_form'>add a word</a>

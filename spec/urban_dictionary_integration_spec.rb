@@ -12,9 +12,23 @@ describe('the word definition path', {:type => :feature}) do
         fill_in('word', :with => "first_test")
         click_button('submit_word')
         expect(page).to have_content('first_test')
-        # fill_in('word', :with => "second_test")
-        # click_button('submit')
-        # expect(page).to have_content('first_test second_test')
+      click_link('to_word_form')
+        fill_in('word', :with => "second_test")
+        click_button('submit_word')
+        expect(page).to have_content('first_test second_test')
   end
+
+  it("takes a definition from the user for a given Word object and returns a list of all paired definitions for the given Word object") do
+    visit('/')
+      click_link('to_word_form')
+        fill_in('word', :with => "first_test")
+        click_button('submit_word')
+        expect(page).to have_content('first_test')
+      click_link('to_word_form')
+        fill_in('word', :with => "second_test")
+        click_button('submit_word')
+        expect(page).to have_content('first_test second_test')
+  end
+
 
 end
