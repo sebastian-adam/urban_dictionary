@@ -10,7 +10,7 @@ Independent Project for Epicodus 07.10.2016
 This app relates a word with one or more definitions using nested class objects. When a user selects a word value from the list of user inputs the app only returns definitions associated with that word.
 
 ## Demo
-Visit to see a site demo.
+Visit https://tranquil-brushlands-18852.herokuapp.com/ to see a site demo.
 
 ## Setup
 * Clone this repository
