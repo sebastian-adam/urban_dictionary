@@ -12,4 +12,10 @@ describe(Definition) do
       expect(test_definition.definition()).to eq('This is a test definition.')
     end
   end
+
+  describe('.all') do
+    it('returns an empty array before first definition value submission') do
+      expect(Definition.all()).to eq([])
+    end
+  end
 end
