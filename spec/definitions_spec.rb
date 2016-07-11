@@ -18,4 +18,12 @@ describe(Definition) do
       expect(Definition.all()).to eq([])
     end
   end
+
+  describe('#save') do
+    it('stores a definition value in the Definition object array') do
+      test_definition = Definition.new({:definition => 'This is a test definition.'})
+      test_definition.save()
+      expect(Definition.all()).to eq([test_definition])
+    end
+  end
 end
