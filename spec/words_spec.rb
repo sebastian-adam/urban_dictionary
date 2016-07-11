@@ -26,4 +26,12 @@ describe(Word) do
       expect(Word.all()).to eq([test_word])
     end
   end
+
+  describe('.find') do
+    it('stores a word value in the Word object array') do
+      test_word = Word.new({:word => "test"})
+      test_word.save()
+      expect(Word.all()).to eq([test_word])
+    end
+  end
 end
