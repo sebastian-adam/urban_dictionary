@@ -1,0 +1,9 @@
+<h1>Urban Dictionary</h1>
+
+<ul>
+  <% @words.each() do |word| %>
+    <li><a href='/word/<%= word.id() %>'><%= word.word() %></a></li>
+  <% end %>
+</ul>
+
+<a id='to_word_form' href='/word_form'>Add a Word</a>
